@@ -11,7 +11,7 @@ type LoginStatus = 'idle' | 'pending' | 'fulfilled' | 'rejected'
 
 
 export default function Login() {
-  const loginId = useId()
+  const emailId = useId()
   const passwordId = useId()
   const [fields, setFields] = useState<LoginValues>({ email: '', password: '' })
   const [status, setStatus] = useState<LoginStatus>('idle')
@@ -37,9 +37,9 @@ export default function Login() {
     <div className={styles.container}>
       <form className={styles.form} onSubmit={handleSubmit}>
         <div className={styles.formField}>
-          <label htmlFor={loginId}>Введите email</label>
+          <label htmlFor={emailId}>Введите email</label>
           <input
-            id={loginId}
+            id={emailId}
             type="email"
             name="email"
             value={fields.email}
