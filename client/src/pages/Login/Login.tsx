@@ -1,4 +1,5 @@
 import { useId, useState, type ChangeEvent, type SubmitEvent } from 'react'
+import { Link } from 'react-router'
 import styles from './Login.module.css'
 
 
@@ -62,7 +63,7 @@ export default function Login() {
           Войти
         </button>
         <div>
-          Нет аккаунта? <a href='#'>Зарегистрироваться</a>
+          Нет аккаунта? <Link to="/register">Зарегистрироваться</Link>
         </div>
       </form>
     </div>

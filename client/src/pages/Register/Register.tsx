@@ -1,4 +1,5 @@
 import { useId, useState, type ChangeEvent, type SubmitEvent } from "react";
+import { Link } from 'react-router'
 import styles from "./Register.module.css";
 
 type RegisterValues = {
@@ -99,7 +100,7 @@ export default function Register() {
           Зарегистрироваться
         </button>
         <div>
-          Есть аккаунт? <a href="#">Войти</a>
+          Есть аккаунт? <Link to="/login">Войти</Link>
         </div>
       </form>
     </div>
